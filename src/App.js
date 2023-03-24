@@ -2,6 +2,9 @@ import './App.css';
 import Header from './components/Header';
 import AlbumMessage from './components/AlbumMessage';
 import AlbumListing from './components/AlbumListing';
+import Form from './components/Form';
+import SubmitButton from './components/SubmitButton';
+import Input from './components/Input';
 
 function App() {
   return (
@@ -13,16 +16,22 @@ function App() {
         AlbumArtist="Beyonce"
         AlbumGenre="RnB"
       />
+
     <AlbumListing
       AlbumName="DAMN"
      AlbumArtist="Kendrick Lamar"
       AlbumGenre="HipHop"
     />
+
     <AlbumListing
       AlbumName="All Eyez on Me"
       AlbumArtist="Tupac"
       AlbumGenre="Rap"
     />
+  
+  <div>
+    <Form/>
+  </div>
     </>
   );
 }
